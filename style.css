@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&display=swap');
+
+:root {
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --clr-red: #ff0800;
+    --clr-blue: #26ff00;
+    --clr-yellow: #008cff;
+    --clr-green: #22ff00;
+    --clr-orange: #00fbff;
+    --clr-background: rgb(0, 0, 0);
+}
+
+body {
+    background: var(--clr-background);
+}
+
+.red {
+    color: var(--clr-red);
+}
+
+.yellow {
+    color: var(--clr-yellow);
+}
+
+.blue {
+    color: var(--clr-blue);
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.grid-container {
+    padding: 4px;
+    display: grid;
+    height: 260px;
+    width: 260px;
+    background-color: var(--clr-background);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    border-radius: 4px;
+}
+
+.cell {
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:hover {
+    cursor: crosshair;
+}
+
+.control-container {
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.pvp {
+    background-color: var(--clr-green);
+}
+
+.bot-match {
+    background-color: var(--clr-yellow) ;
+}
+
+.game-mode::before{
+    content: "Current mode: "
+}
+
+h6 {
+    font-size: 24px;
+}

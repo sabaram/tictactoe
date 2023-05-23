@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>
+                <span class="red">Tic</span>
+                <span class="yellow">Tac</span>
+                <span class="blue">Toe</span>
+            </h2>
+        </div>
+        <div class="grid-container">
+            <div class="cell" data-index="0" data-marked = "false"></div>
+            <div class="cell" data-index="1" data-marked = "false"></div>
+            <div class="cell" data-index="2" data-marked = "false"></div>
+            <div class="cell" data-index="3" data-marked = "false"></div>
+            <div class="cell" data-index="4" data-marked = "false"></div>
+            <div class="cell" data-index="5" data-marked = "false"></div>
+            <div class="cell" data-index="6" data-marked = "false"></div>
+            <div class="cell" data-index="7" data-marked = "false"></div>
+            <div class="cell" data-index="8" data-marked = "false"></div>
+        </div>
+        <div class="score-container">
+
+        </div>
+<!--         <div class="control-container">
+            <div class="left">
+                <button class="btn btn-success">PVP</button>
+            </div>
+            <div class="right">
+                <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      BOT
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">BOT-Easy</a></li>
+                      <li><a class="dropdown-item" href="#">BOT-Medium</a></li>
+                      <li><a class="dropdown-item" href="#">BOT-Hard</a></li>
+                      <li><a class="dropdown-item" href="#">BOT-Unbeatable</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div> -->
+        
+        <div class="status-container mt-3 text-center">
+            <div>
+                <h6 class="current-turn">X's turn!</h6>
+            </div>
+
+            <div>
+                <h5 class="game-mode">PVP</h5>
+            </div>
+        </div>
+
+        <footer class="container-fluid mb-2 text-center p-1 bottom-0 position-fixed">
+            <a href="https://github.com/sabaram" target="_blank" class="text-decoration-none text-black">Mona Russell Lara</a>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
